@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(0, 255, 255, 0.228); */
+}
+@font-face {
+  font-family: "Nike";
+  src: url(/font/Helvetica\ 93\ Black\ Extended.otf);
+}
+@font-face {
+  font-family: "Normal";
+  src: url(/font/Helvetica\ 93\ Black\ Extended.otf);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navigate {
+  /* background-color: black; */
+  padding: 0 3vw;
+  height: 80px;
+  /* background-color: red; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.li > a {
+  text-decoration: none;
+  /* color: whitesmoke; */
+}
+.lo > img {
+  height: 40px;
+  object-fit: cover;
+}
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  z-index: 1;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: none;
+  z-index: 9;
+}
+.blocks > .inner-sections {
+  margin-top: 12vw;
+  display: flex;
+  padding: 0 10vw;
+  flex-direction: column;
+  align-items: self-start;
+
+  justify-content: center;
+  gap: 5vw;
+}
+.inner-sections > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+
+  text-transform: uppercase;
+}
+
+.header-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.mid {
+  position: relative;
+  height: calc(100% - 80px);
+  /* background-color: rebeccapurple; */
+}
+.text-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: rgb(1, 1, 1);
+  z-index: 1;
+}
+.mid > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-color: red; */
+}
+/* .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.194);
+}
+
+.text-area > h1 {
+  font-family: "Nike";
+  text-align: center;
+  font-size: 3vw;
+}
+
+.header-page > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* @media screen and (max-width: 768px) {
+  .text-area > h1 {
+    font-family: "Nike";
+    text-align: center;
+  }
+} */
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
+  max-width: 900px;
+}
+
+.card {
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 4px;
+  /* margin: 20px; */
+  width: 480px;
+  text-align: center;
+  color: white;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .li > a {
+    display: none;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vw;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 290px;
+    height: 200px;
+    padding: 2vw;
+  }
+  .card > img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  .card > h3 {
+    font-size: 12px;
+  }
+  .ham {
+    display: block;
+  }
+}
+
+@media screen and (width: 280px), screen and (width: 653px) {
+  .ham {
+    display: block;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vw;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 290px;
+    height: 200px;
+    padding: 2vw;
+  }
+  .card > img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+  }
+  .card > h3 {
+    font-size: 12px;
+  }
+}

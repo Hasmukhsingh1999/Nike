@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#loader{
+    z-index: 1000000000000;
+}
+.col-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.head {
+  /* position: absolute; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2vw 6vw;
+  justify-content: space-between;
+  /* background-color: yellow; */
+}
+.head > p,
+.head > i {
+  font-size: 1.5vw;
+}
+
+.shoes-section {
+  width: 100%;
+  height: 100%;
+
+  /* background-color: violet; */
+}
+
+
+.container-I {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;overflow: auto;
+  }
+  
+  .shoe-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .shoe-card >img {
+    max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  max-height: 350px; 
+  }
+  
+  .shoe-card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .shoe-card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .add-to-cart-btn {
+    /* background-color: #3498db; */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    /* background-color: #2980b9; */
+  }
+  .extra-page{
+    width: 100%;
+    height: 20vh;
+  }
+  .kart-section{
+    position: fixed;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+    right: 100%;
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 9999;
+  }
+  @media screen and (max-width: 600px) {
+    .container-I {
+      grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
+@media screen and (max-width: 768px) {
+    .container-I {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+      }
+      .head{
+        padding: 3vw;
+      }
+      .head>p{
+        font-size: 8vw;
+      }
+      .head>i{
+        font-size: 5vw;
+      }
+}
+
+@media screen and (width: 280px), screen and (width: 653px) {
+    .container-I {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+      }
+      .head{
+        padding: 3vw;
+      }
+      .head>p{
+        font-size: 8vw;
+      }
+      .head>i{
+        font-size: 5vw;
+      }
+      .shoe-card h3 {
+        margin: 0;
+        font-size: 13px;
+      }
+      
+      .shoe-card p {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      
+      .add-to-cart-btn {
+        /* background-color: #3498db; */
+        color: #fff;
+        border: none;
+        padding: 8px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .add-to-cart-btn:hover {
+        background-color: #2980b9;
+      }
+
+}
+
+

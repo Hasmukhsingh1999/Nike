@@ -1,0 +1,11 @@
+Model Information:
+* title:	Blue Sneaker
+* source:	https://sketchfab.com/3d-models/blue-sneaker-75c97069e89c4d84ab36922b77a97678
+* author:	Meerschaum Digital (https://sketchfab.com/meerschaumdigital)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Blue Sneaker" (https://sketchfab.com/3d-models/blue-sneaker-75c97069e89c4d84ab36922b77a97678) by Meerschaum Digital (https://sketchfab.com/meerschaumdigital) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
